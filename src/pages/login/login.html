@@ -1,0 +1,14 @@
+<ion-content text-center fullscreen="true">
+    <br><br><br><br><br><br>    
+        <form (submit)="UserAuthentication()">
+              <ion-list inset> 
+            <ion-item>
+              <ion-input [(ngModel)]="loginData.StaffID" name="StaffID" type="text" placeholder="Username" ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input [(ngModel)]="loginData.Password" name="Password" type="password" placeholder="Password"></ion-input>
+            </ion-item>
+            <button ion-button round block type="submit">Login</button>
+            </ion-list>
+      </form>    
+</ion-content>
